@@ -7,35 +7,35 @@ Description
 -----------
 
 ```javascript
-Digit ::= '0' | '1' | '2' | ... | '9'
-LowerAlpha ::= 'a' | 'b' | 'c' | ... | 'z'
-UpperAlpha ::= 'A' | 'B' | 'C' | ... | 'Z'
-Identifier ::= (LowerAlpha | UpperAlpha){LowerAlpha | UpperAlpha | Digit | '_'}
+Digit = '0' | '1' | '2' | ... | '9'
+LowerAlpha = 'a' | 'b' | 'c' | ... | 'z'
+UpperAlpha = 'A' | 'B' | 'C' | ... | 'Z'
+Identifier = (LowerAlpha | UpperAlpha){LowerAlpha | UpperAlpha | Digit | '_'}
 
-Numberic ::= Digit{Digit}
-VariableName ::= Identifier
+Numberic = Digit{Digit}
+VariableName = Identifier
 
-Expression ::= Assignment
-Assignment ::= (Identifier '=' Expression | Logical)
-LogicalOperator ::= '&&' | '||'
-Logical ::= Comparison [ LogicalOperator Logical ]
-ComparisonOperator ::= '==' | '!=' | '>' | '>=' | '<' | '<='
-Comparison ::= Arithmetic [ ComparisonOperator Comparison ]
-ArithmeticOperator ::= '+' | '-'
-Arithmetic ::= Term [ ArithmeticOperator Arithmetic ]
-TermOperator ::= '*' | '/'
-Term ::= Unary [ TermOperator Term ]
-UnaryOperator ::= '-' | '!'
-Unary ::= UnaryOperator Unary | Factor
-Factor ::= VariableName | Numberic | '(' Expression ')'
+Expression = Assignment
+Assignment = (Identifier '=' Expression | Logical)
+LogicalOperator = '&&' | '||'
+Logical = Comparison [ LogicalOperator Logical ]
+ComparisonOperator = '==' | '!=' | '>' | '>=' | '<' | '<='
+Comparison = Arithmetic [ ComparisonOperator Comparison ]
+ArithmeticOperator = '+' | '-'
+Arithmetic = Term [ ArithmeticOperator Arithmetic ]
+TermOperator = '*' | '/'
+Term = Unary [ TermOperator Term ]
+UnaryOperator = '-' | '!'
+Unary = UnaryOperator Unary | Factor
+Factor = VariableName | Numberic | '(' Expression ')'
 
-Statement ::= IfStatement | WhileStatement | PrintStatement | Expression ';'
-CodeBlock ::= '{' {Statement} '}' | Statement
-IfStatement ::= 'if' '(' Expression ')' CodeBlock [ 'else' CodeBlock ]
-WhileStatement ::= 'while' '(' Expression ')' CodeBlock
-PrintStatement ::= 'print' Expression ';'
+Statement = IfStatement | WhileStatement | PrintStatement | Expression ';'
+CodeBlock = '{' {Statement} '}' | Statement
+IfStatement = 'if' '(' Expression ')' CodeBlock [ 'else' CodeBlock ]
+WhileStatement = 'while' '(' Expression ')' CodeBlock
+PrintStatement = 'print' Expression ';'
 
-Program ::= {Statement}
+Program = {Statement}
 ```
 
 
