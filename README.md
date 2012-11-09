@@ -6,7 +6,7 @@ Example implementation of simple arithmetic language which looks like a subset o
 Description
 -----------
 
-```
+```javascript
 Digit ::= '0' | '1' | '2' | ... | '9'
 LowerAlpha ::= 'a' | 'b' | 'c' | ... | 'z'
 UpperAlpha ::= 'A' | 'B' | 'C' | ... | 'Z'
