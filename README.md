@@ -1,7 +1,7 @@
 Lang Example
 ============
 
-Example implementation of simple arithmetic language which looks like subset of JavaScript.
+Example implementation of simple arithmetic language which looks like a subset of JavaScript.
 
 Description
 -----------
