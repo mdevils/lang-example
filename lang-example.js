@@ -1,8 +1,8 @@
-var parser = require('lib/parser'),
+var parser = require('./lib/parser'),
     Parser = parser.Parser,
     Token = parser.Token,
-    AstBuilder = require('lib/ast').AstBuilder,
-    Interpreter = require('lib/interpreter').Interpreter;
+    AstBuilder = require('./lib/ast').AstBuilder,
+    Interpreter = require('./lib/interpreter').Interpreter;
 
 //-----------------------------------------------------------------------------
 
